@@ -16,6 +16,20 @@ Installation
 npm install --save-dev coverage-badger
 ```
 
+NPM Script
+===
+
+coverage-badger can be run as a NPM script.
+
+Example:
+
+```
+"scripts": {
+  "coverage-badge": "coverage-badger -r coverage/clover.xml -d coverage/",
+  "coverage": "npm test -- --coverage && npm run coverage-badge"
+}
+```
+
 CLI
 ===
 
@@ -24,7 +38,7 @@ You can now use the CLI to create the badge for a XML Clover report.
 The CLI prints the following help:
 
 ```
-$ coverage-badger
+$ ./node_modules/coverage-badger/lib/cli.js
 
   Usage: cli [options]
 
