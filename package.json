@@ -1,0 +1,53 @@
+{
+  "name": "coverage-badger",
+  "version": "1.0.0",
+  "description": "Coverage report badger tool.",
+  "keywords": [
+    "coverage",
+    "unit test",
+    "report",
+    "github badge",
+    "clover"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/notnotse/coverage-badger",
+  "bugs": {
+    "url": "https://github.com/notnotse/coverage-badger/issues"
+  },
+  "author": {
+    "name": "Not Not Consulting",
+    "email": "info@notnto.se",
+    "url": "https://github.com/notnotse"
+  },
+  "contributors": [
+  ],
+  "main": "./lib/index.js",
+  "bin": {
+    "coverage-badger": "./lib/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:notnotse/coverage-badger.git"
+  },
+  "scripts": {
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report text -- -R spec"
+  },
+  "dependencies": {
+    "commander": "^2.8.1",
+    "xml-splitter": "~1.2.1",
+    "xtend": "~4.0.1"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "codacy-coverage": "1.1.2",
+    "coveralls": "2.11.3",
+    "istanbul": "0.4.1",
+    "jscs": "^2.0.0",
+    "mocha": "^2.2.5"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
