@@ -1,6 +1,6 @@
 {
   "name": "coverage-badger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Coverage report badger tool.",
   "keywords": [
     "coverage",
@@ -19,8 +19,7 @@
     "email": "info@notnto.se",
     "url": "https://github.com/notnotse"
   },
-  "contributors": [
-  ],
+  "contributors": ["jhillacre"],
   "main": "./lib/index.js",
   "bin": {
     "coverage-badger": "./lib/cli.js"
